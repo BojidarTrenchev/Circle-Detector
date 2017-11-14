@@ -19,7 +19,6 @@ public class CircleDetector {
 
 	}
 	
-
 	public void detect(String imgPath) {
 		BufferedImage img = getImage(imgPath);
 		pixels = getPixelMatrix(img);
@@ -138,7 +137,6 @@ public class CircleDetector {
                             	A[a][b][r - radiusMin] += 1;
 
                             }
-
 						}
 					}
 				}
@@ -162,7 +160,7 @@ public class CircleDetector {
 				}
 			}
 		}
-		
+		r += radiusMin;
 		System.out.println(newX);
 		System.out.println(newY);
 		System.out.println(r);
